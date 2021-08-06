@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    std::cout << "In" << std::endl;
+
     try {
         cv::Mat img = cv::imread(argv[1], -1);
 
@@ -20,9 +20,10 @@ int main(int argc, char *argv[]) {
         cv::imshow("Example1", img);
         cv::waitKey(0);
         cv::destroyWindow("Example1");
+        std::cout << "Suceess" << std::endl;
     } catch (...) {
         std::cout << "Error" << std::endl;
+        return -1;
     }
-    std::cout << "Suceess" << std::endl;
     return 0;
 }
