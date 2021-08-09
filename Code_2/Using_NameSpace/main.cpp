@@ -26,12 +26,12 @@ int main(int argc, char *argv[]) {
         // 参数：标题名，Flags
         // 标题名指定了窗口的标题，未来HighGUI的和这个窗口的交互函数将由这个名称来指定要与哪个窗口交互。
         // WINDOW_AUTOSIZE 表示窗口大小和图像大小一致。
-        namedWindow("Example1", WINDOW_AUTOSIZE);
+        namedWindow("Example2_2", WINDOW_AUTOSIZE);
         // cv::imshow()
         // 将建一个窗口（如果这个窗口不存在，它会自动调用cv::namedWindow()
         // 新建一个窗口）。 在调用cv: :imshow()
         // 的时候，窗口将被重绘上要求的图片，并且窗口会按照要求自动调整大小（如果使用cv::WINDOW_AUTOSIZE参数）。
-        imshow("Example1", img);
+        imshow("Example2_2", img);
         // 系统暂停并且等待键盘事件。如果其传入了一个大于零的参数，
         // 它将会等待等同千该参数的毫秒时间，然后继续执行程序。
         // 如果参数被设置为0或者一个负数，程序将会无限等待直到有键被按下。

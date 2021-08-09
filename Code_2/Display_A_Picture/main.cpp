@@ -16,10 +16,10 @@ int main(int argc, char *argv[]) {
             std::cout << "Need a Picture" << std::endl;
             return -1;
         }
-        cv::namedWindow("Example1", cv::WINDOW_AUTOSIZE);
-        cv::imshow("Example1", img);
+        cv::namedWindow("Example2_1", cv::WINDOW_AUTOSIZE);
+        cv::imshow("Example2_1", img);
         cv::waitKey(0);
-        cv::destroyWindow("Example1");
+        cv::destroyWindow("Example2_1");
         std::cout << "Suceess" << std::endl;
     } catch (...) {
         std::cout << "Error" << std::endl;
