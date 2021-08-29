@@ -16,9 +16,9 @@ LINK_DIRECTORIES(${OpenCV_LIBRARY_DIRS})
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${OpenCV_LIBS})
 
 # 复制资源目录
-ADD_CUSTOM_COMMAND(TARGET ${PROJECT_NAME} POST_BUILD
-                   COMMAND ${CMAKE_COMMAND} -E copy_directory
-                       ${CMAKE_CURRENT_SOURCE_DIR}/assets $<TARGET_FILE_DIR:${PROJECT_NAME}>/assets)
+# ADD_CUSTOM_COMMAND(TARGET ${PROJECT_NAME} POST_BUILD
+#                    COMMAND ${CMAKE_COMMAND} -E copy_directory
+#                        ${CMAKE_CURRENT_SOURCE_DIR}/assets $<TARGET_FILE_DIR:${PROJECT_NAME}>/assets)
 
 # Test
 # ENABLE_TESTING()
